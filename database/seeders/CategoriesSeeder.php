@@ -9,28 +9,14 @@ class CategoriesSeeder extends Seeder
 {
     public function run()
     {
-        $categories = [
-            'Fiction',
-            'Non-Fiction',
-            'Science Fiction',
-            'Mystery',
-            'Romance',
-            'Fantasy',
-            'Thriller',
-            'Biography',
-            'History',
-            'Self-Help',
-            'Cooking',
-            'Travel',
-            'Science',
-            'Art',
-            'Poetry',
-        ];
-
-        foreach ($categories as $category) {
-            DB::table('categories')->insert([
-                'category' => $category,
-            ]);
-        }
+        DB::table('categories')->insert([
+            'category' => 'Fiction',
+            'category' => 'Horror',
+            'category' => 'Thriller',
+            'category' => 'Romance',
+            'category' => 'Action',
+            'category' => 'Slice of Life',
+            'category' => 'Music',
+        ]);
     }
 }

@@ -15,9 +15,9 @@ class UsersSeeder extends Seeder
 
         for ($i = 1; $i <= 10; $i++) {
             DB::table('users')->insert([
-                'username' => 'user' . $i,
+                'username' => 'luthfi_bot' . $i,
                 'name' => $faker->name,
-                'email' => 'user' . $i . '@example.com',
+                'email' => 'luthfi_bot' . $i . '@google.com',
                 'email_verified_at' => now(),
                 'password' => Hash::make('password' . $i),
                 'created_at' => now(),
