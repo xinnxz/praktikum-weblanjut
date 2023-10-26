@@ -8,4 +8,9 @@ use Illuminate\Database\Eloquent\Model;
 class User extends Model
 {
     use HasFactory;
+
+    public function loan()
+    {
+        return $this->hasMany(Loan::class, "user_id");
+    }
 }
